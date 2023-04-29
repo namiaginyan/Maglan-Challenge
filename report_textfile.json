@@ -1,0 +1,119 @@
+[
+    {
+        "Site": "https://twitter.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:43 GMT",
+        "Grade": "C",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.yahoo.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:44 GMT",
+        "Grade": "B",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.tiktok.com/en/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:49 GMT",
+        "Grade": "A",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "Referrer-Policy",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://he.quora.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:50 GMT",
+        "Grade": "B",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.pinterest.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:51 GMT",
+        "Grade": "B",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.craigslist.org/",
+        "Report Time": "Sat, 29 Apr 2023 13:26:18 GMT",
+        "Grade": "C",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.youtube.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:54 GMT",
+        "Grade": "B",
+        "Available Headers": [
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Permissions-Policy",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.reddit.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:55 GMT",
+        "Grade": "C",
+        "Available Headers": [
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.ebay.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:57 GMT",
+        "Grade": "C",
+        "Available Headers": [
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://davidson.weizmann.ac.il/en",
+        "Report Time": "Sat, 29 Apr 2023 13:35:57 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ]
+    },
+    {
+        "Site": "https://zoom.us/",
+        "Report Time": "Sat, 29 Apr 2023 13:35:58 GMT",
+        "Grade": "A",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "Referrer-Policy",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    }
+]

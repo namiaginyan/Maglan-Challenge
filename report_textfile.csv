@@ -1,0 +1,12 @@
+Site,Report Time,Grade,Available Headers
+https://twitter.com/,"Sat, 29 Apr 2023 13:35:43 GMT",C,"['Content-Security-Policy', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://www.yahoo.com/,"Sat, 29 Apr 2023 13:35:44 GMT",B,"['Content-Security-Policy', 'X-Frame-Options', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://www.tiktok.com/en/,"Sat, 29 Apr 2023 13:35:49 GMT",A,"['Content-Security-Policy', 'X-Frame-Options', 'Referrer-Policy', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://he.quora.com/,"Sat, 29 Apr 2023 13:35:50 GMT",B,"['Content-Security-Policy', 'X-Frame-Options', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://www.pinterest.com/,"Sat, 29 Apr 2023 13:35:51 GMT",B,"['Content-Security-Policy', 'X-Frame-Options', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://www.craigslist.org/,"Sat, 29 Apr 2023 13:26:18 GMT",C,"['Content-Security-Policy', 'X-Frame-Options', 'Strict-Transport-Security']"
+https://www.youtube.com/,"Sat, 29 Apr 2023 13:35:54 GMT",B,"['X-Frame-Options', 'X-Content-Type-Options', 'Permissions-Policy', 'Strict-Transport-Security']"
+https://www.reddit.com/,"Sat, 29 Apr 2023 13:35:55 GMT",C,"['X-Frame-Options', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://www.ebay.com/,"Sat, 29 Apr 2023 13:35:57 GMT",C,"['X-Frame-Options', 'X-Content-Type-Options', 'Strict-Transport-Security']"
+https://davidson.weizmann.ac.il/en,"Sat, 29 Apr 2023 13:35:57 GMT",D,"['X-Frame-Options', 'X-Content-Type-Options']"
+https://zoom.us/,"Sat, 29 Apr 2023 13:35:58 GMT",A,"['Content-Security-Policy', 'X-Frame-Options', 'Referrer-Policy', 'X-Content-Type-Options', 'Strict-Transport-Security']"
