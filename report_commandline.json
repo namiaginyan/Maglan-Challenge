@@ -1,0 +1,140 @@
+[
+    {
+        "Site": "http://facebook.com",
+        "Report Time": "Sat, 29 Apr 2023 13:04:54 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.linkedin.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:04:54 GMT",
+        "Grade": "B",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://securityheaders.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:04:56 GMT",
+        "Grade": "A",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "Referrer-Policy",
+            "X-Content-Type-Options",
+            "Permissions-Policy",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://amazon.com",
+        "Report Time": "Sat, 29 Apr 2023 13:04:57 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "http://ynet.co.il",
+        "Report Time": "Sat, 29 Apr 2023 13:04:58 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Frame-Options"
+        ]
+    },
+    {
+        "Site": "http://gov.il",
+        "Report Time": "Sat, 29 Apr 2023 13:04:58 GMT",
+        "Grade": "C",
+        "Available Headers": [
+            "X-Frame-Options",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.wikipedia.org/",
+        "Report Time": "Sat, 29 Apr 2023 08:43:39 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.netflix.com",
+        "Report Time": "Sat, 29 Apr 2023 13:04:59 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://moodle.tau.ac.il/",
+        "Report Time": "Sat, 29 Apr 2023 13:05:00 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Frame-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.walla.co.il/",
+        "Report Time": "Sat, 29 Apr 2023 13:05:00 GMT",
+        "Grade": "F",
+        "Available Headers": []
+    },
+    {
+        "Site": "https://github.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:04:51 GMT",
+        "Grade": "B",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "Referrer-Policy",
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.instagram.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:05:01 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://www.google.com",
+        "Report Time": "Sat, 29 Apr 2023 13:05:01 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Frame-Options"
+        ]
+    },
+    {
+        "Site": "https://stackoverflow.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:05:02 GMT",
+        "Grade": "C",
+        "Available Headers": [
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "Strict-Transport-Security"
+        ]
+    },
+    {
+        "Site": "https://web.whatsapp.com/",
+        "Report Time": "Sat, 29 Apr 2023 13:05:02 GMT",
+        "Grade": "D",
+        "Available Headers": [
+            "X-Content-Type-Options",
+            "Strict-Transport-Security"
+        ]
+    }
+]
