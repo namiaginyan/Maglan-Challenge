@@ -93,7 +93,7 @@ def challenge():
             for line in file:
                 urls.append(line.strip())
     else:
-        # Check if any arguments were provided
+        # if arguments weren't provided
         parser.print_help()
 
         # Exit the code
