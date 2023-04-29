@@ -4,6 +4,7 @@ import urllib3
 import pandas as pd
 import csv
 import json
+import sys
 
 
 def calculate_grade(num):
@@ -84,16 +85,21 @@ def challenge():
     # Parse the command line arguments
     args = parser.parse_args()
 
-    print("Creating the report...")
-
-    # Check if it's a list or a file
-    # Create a URLs list
+    # Check if it's a list or a file and create a URLs list
     if args.url:
         urls = args.url
-    else:
+    elif args.path:
         with open(args.path, 'r') as file:
             for line in file:
                 urls.append(line.strip())
+    else:
+        # Check if any arguments were provided
+        parser.print_help()
+
+        # Exit the code
+        sys.exit(0)
+
+    print("Creating the report...")
 
     for url in urls:
 
