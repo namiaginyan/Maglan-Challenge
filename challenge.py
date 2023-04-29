@@ -131,6 +131,5 @@ def challenge():
 
     print("Done! report.csv and report.json created ")
 
-
 if __name__ == '__main__':
     challenge()
