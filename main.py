@@ -6,92 +6,124 @@ import csv
 import json
 
 
-def grade_calculator(url):
+def calculate_grade(num):
+    """
+        	:param num: the sum of OK headers
+        	:return: return the URL grade based on the num
+        """
+    if num == 6 or num == 5:
+        grade = "A"
+    elif num == 4:
+        grade = "B"
+    elif num == 3:
+        grade = "C"
+    elif num == 1 or num == 2:
+        grade = "D"
+    else:
+        grade = "F"
+
+    return grade
+
+
+def url_info(url):
+    """
+    	:param url: the url to check
+    	:return: the grade of each url, the headers it contains and the report time
+    """
+
+    # Disable the ssl-warnings
     urllib3.disable_warnings()
-    sum = 0
+
+    summ = 0
     headers = []
+
+    # Make a GET request to the URL using the requests library
     response = requests.get(url, verify=False)
 
+    # Get the date from the response headers
+    date = response.headers.get('Date')
+
+    # Calculate the grade according to the Rules. If the header is OK - add 1 to sum and to the headers list
     if "Content-Security-Policy" in response.headers:
-        sum += 1
+        summ += 1
         headers.append("Content-Security-Policy")
 
-    if response.headers.get('X-Frame-Options') and response.headers['X-Frame-Options'].lower() == 'sameorigin':
-        sum += 1
+    if response.headers.get('X-Frame-Options') and 'sameorigin' in response.headers['X-Frame-Options'].lower():
+        summ += 1
         headers.append('X-Frame-Options')
 
-    if response.headers.get('Referrer-Policy') and response.headers[
-        'Referrer-Policy'].lower() == 'strict-origin-when-cross-origin':
-        sum += 1
+    if response.headers.get('Referrer-Policy') and 'strict-origin-when-cross-origin' in response.headers[
+        'referrer-policy'].lower():
+        summ += 1
         headers.append('Referrer-Policy')
 
     if 'X-Content-Type-Options' in response.headers:
-        sum += 1
+        summ += 1
         headers.append('X-Content-Type-Options')
 
     if 'Permissions-Policy' in response.headers:
-        sum += 1
+        summ += 1
         headers.append('Permissions-Policy')
 
     if 'Strict-Transport-Security' in response.headers:
-        sum += 1
+        summ += 1
         headers.append('Strict-Transport-Security')
 
-    if sum == 6 or sum == 5:
-        grade = "A"
-    elif sum == 4:
-        grade = "B"
-    elif sum == 3:
-        grade = "C"
-    else:
-        grade = "D"
-
-    return grade, headers
+    return date, calculate_grade(summ), headers
 
 
 def challenge():
     urls = []
     report = []
 
-    print(" please enter --URL for a list or --path for a file")
+    # Create an argument parser
     parser = argparse.ArgumentParser(description='Get the URLs in command line or text file')
-    parser.add_argument('--URL', nargs='*', help="list of URLs")
-    parser.add_argument('--path', help="text file path containing URLS")
+    parser.add_argument('-url', nargs='*', help="list of URLs")
+    parser.add_argument('-path', help="text file containing URLS")
+
+    # Parse the command line arguments
     args = parser.parse_args()
 
-    if args.URL:
-        urls = args.URL
+    print("Creating the report...")
+
+    # Check if it's a list or a file
+    # Create a URLs list
+    if args.url:
+        urls = args.url
     else:
         with open(args.path, 'r') as file:
             for line in file:
                 urls.append(line.strip())
 
     for url in urls:
-        info = grade_calculator(url)
-        grade = info[0]
-        headers = info[1]
-        report.append([url, grade, headers])
 
-    fields = ['Site', 'Grade', 'Headers']
+        # Get the information for each URL
+        info = url_info(url)
+        date = info[0]
+        grade = info[1]
+        headers = info[2]
+        report.append([url, date, grade, headers])
 
-    # Creating a data frame using pandas
+    fields = ['Site', 'Report Time', 'Grade', 'Available Headers']
+
+    # Create a data frame using pandas
     df = pd.DataFrame(report, columns=fields)
 
-    # Converting the data from list to dictionary
+    # Convert the data from list to dictionary
     dict = df.to_dict(orient='records')
 
-    # Creating a csv file and writing the data
-    # We set orient = 'records' to convert each row of the dataframe to a separate JSON object
+    # Create a csv file and write the data to the file
+    # We set orient = 'records' to convert each row of the dataframe to a separate object
     with open('report.csv', 'w', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fields)
         writer.writeheader()
         writer.writerows(dict)
 
-    # Creating a json file and writing the data
+    # Create a json file and write the data to the file
     with open("report.json", "w") as outfile:
         json.dump(dict, outfile, indent=4)
 
-    print("Done! File created ")
+    print("Done! report.csv and report.json created ")
 
 
 if __name__ == '__main__':
